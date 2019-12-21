@@ -12,6 +12,7 @@ df = pd.read_csv(
 #oper_options = df['Operation'].unique()
 oper_options = ['All Operations','Directly Managed','HO Managed','National Operator']
 app = dash.Dash()
+server = app.server
 
 app.layout = html.Div([
     html.H2("Proposed 2020 Budgeted Revenue by Operational Unit for Africa"),

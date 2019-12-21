@@ -64,7 +64,7 @@ def update_graph(Operation):
         'data': [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9],
         'layout':
         go.Layout(
-            title='Budgeted Revenue by Module for {}'.format(Operation),
+            title='{}'.format(Operation),
             barmode='stack')
     }
 

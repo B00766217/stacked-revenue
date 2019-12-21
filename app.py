@@ -15,7 +15,7 @@ app = dash.Dash()
 server = app.server
 
 app.layout = html.Div([
-    html.H2("Proposed 2020 Budgeted Revenue by Operational Unit for Africa"),
+    html.H2("Proposed 2020 Budgeted Revenue by Operational Unit"),
     html.Div(
         [
             dcc.Dropdown(

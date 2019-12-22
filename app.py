@@ -5,17 +5,19 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
 import pandas as pd
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 df = pd.read_csv(
     "df_africa.csv"
 )
 #oper_options = df['Operation'].unique()
 oper_options = ['All Operations','Directly Managed','HO Managed','National Operator']
-app = dash.Dash()
-server = app.server
+
 
 app.layout = html.Div([
-    html.H2("Proposed 2020 Budgeted Revenue by Operational Unit"),
+    html.H2("Proposed 2020 Budgeted Revenue by Operational Unit",style={'textAlign': "center", "padding-bottom": "30"})
     html.Div(
         [
             dcc.Dropdown(

@@ -17,7 +17,7 @@ oper_options = ['All Operations','Directly Managed','HO Managed','National Opera
 
 
 app.layout = html.Div([
-    html.H2("Proposed 2020 Budgeted Revenue by Operational Unit",style={'textAlign': "center", "padding-bottom": "30"})
+    html.H2(["Proposed 2020 Budgeted Revenue by Operational Unit"],style={'textAlign': "center", "padding-bottom": "30"}),
     html.Div(
         [
             dcc.Dropdown(
